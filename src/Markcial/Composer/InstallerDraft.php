@@ -8,7 +8,10 @@ class InstallerDraft implements IInstallerDraft
 {
 	public static function preInstall( Event $event )
 	{
-		 var_dump( $event );
+		 //var_dump( $event );
+		 echo __DIR__;
+		 echo __FILE__;
+		 echo __CLASS__;
 	}
 	public static function postInstall( Event $event )
 	{
