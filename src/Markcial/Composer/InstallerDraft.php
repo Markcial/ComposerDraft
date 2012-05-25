@@ -9,6 +9,8 @@ class InstallerDraft implements IInstallerDraft
 	public static function preInstall( Event $event )
 	{
 		var_dump( $event );
+        file_put_contents( '/tmp/evt_data.dat', var_export( $event, true ) );
+        die;
 	}
 	public static function postInstall( Event $event ){}
 	public static function preUpdate( Event $event ){}
