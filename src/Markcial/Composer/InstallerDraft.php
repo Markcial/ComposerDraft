@@ -8,12 +8,7 @@ class InstallerDraft implements IInstallerDraft
 {
 	public static function preInstall( Event $event )
 	{
-		 $composer = $event->getComposer();
-		 $operation = $composer->getOperation();
-		 $package = $operation->getPackage();
-		 
-		 echo $operation;
-		 echo $package;
+		 var_dump( $event );
 	}
 	public static function postInstall( Event $event )
 	{
